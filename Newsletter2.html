@@ -15,24 +15,34 @@
 
 <table width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:600px;">
 
-<!-- IMAGE + TEXT (SAFE VERSION) -->
+<!-- IMAGE WITH OVERLAY TEXT (FULL IMAGE, NO CROP) -->
 
 <tr>
 <td align="center" style="padding:20px;">
 
-<!-- background image table trick -->
-
-<table width="100%" cellpadding="0" cellspacing="0" border="0"
-style="background-image:url('https://raw.githubusercontent.com/Ux-Oliveira/HenriquesNewsletter/main/base.png');
-  background-size:cover; background-position:center; border-radius:20px;">
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="position:relative;">
 
 <tr>
-<td style="padding:100px 20px; text-align:center;">
+<td align="center">
+
+<img src="https://raw.githubusercontent.com/Ux-Oliveira/HenriquesNewsletter/main/base.png"
+width="100%"
+style="display:block; border-radius:20px; max-width:600px;">
+
+</td>
+</tr>
+
+<tr>
+<td align="center" style="padding:0 20px;">
+
+<!-- overlay text (placed visually on top via spacing) -->
 
 <div style="
+margin-top:-120px;
 color:#ffffff;
 font-size:24px;
 font-weight:bold;
+text-align:center;
 text-shadow:0 0 10px rgba(0,0,0,0.7);
 ">
 Your Henrique themed weekly newsletter is here, my baby girl!
@@ -74,7 +84,7 @@ Your Henrique themed weekly newsletter is here, my baby girl!
 <a href="https://wa.me/5511970161020?text=%2ASpecial%20Visual%20Ticket%2A"
 style="
 display:inline-block;
-background-color:#EF3962;
+background-color:#0A66C2;
 color:white;
 font-size:28px;
 padding:15px 22px;
