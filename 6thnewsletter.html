@@ -50,14 +50,12 @@ p {
   font-family:"Shrikhand", cursive;
 }
 
-/*SAFE IMAGE WRAPPER*/
 .img-wrap {
   width:200px;
   margin:20px auto;
   position:relative;
 }
 
-/* MOBILE FIX */
 @media only screen and (max-width:600px) {
   .stack {
     display:block !important;
@@ -80,21 +78,23 @@ p {
 
 <body>
 
-<!-- PREHEADER -->
-<div style="display:none;max-height:0;overflow:hidden;opacity:0;color:transparent;">
-The most special weekly newsletter awaits you, my angel 💌
-</div>
-
 <div class="wrapper">
 
 <table role="presentation">
 
+<!-- PREHEADER -->
+<tr>
+<td style="display:none;max-height:0;overflow:hidden;opacity:0;color:transparent;">
+The most special weekly newsletter awaits you, my angel 💌
+</td>
+</tr>
+
+<!-- MAIN CONTENT -->
 <tr>
 <td style="padding:40px 20px; position:relative;">
 
 <table width="100%" style="table-layout:fixed;">
 <tr>
-</td>
 
 <!-- CENTER CONTENT -->
 <td class="stack" width="60%" style="text-align:center; position:relative; z-index:2;">
@@ -115,7 +115,6 @@ Such a <span class="highlight">special woman</span>, such an amazing person, suc
 Just press the <span class="highlight">poetry button</span> and enjoy!
 </p>
 
-<!-- CLICKABLE IMAGE -->
 <a href="https://urpoetry.vercel.app/" target="_blank">
 <img src="https://raw.githubusercontent.com/Ux-Oliveira/HenriquesNewsletter/main/header.png"
 style="width:100%;max-width:500px;margin:20px auto;">
@@ -141,29 +140,23 @@ style="width:150px; transform:rotate(10deg);">
 
 </td>
 </tr>
-<!--WHATSAPP BUTTON-->
+
+<!-- PROMO SECTION (FIXED SEPARATE ROW) -->
 <tr>
-<td align="center" style="padding:20px;width:100%;">
+<td align="center" style="padding:20px;">
 
-  <!--left-->
- <td class="stack" width="20%" style="text-align:center; vertical-align:top;">
-
-<table role="presentation" width="100%">
-  <tr>
-    <td height="280" style="font-size:0;line-height:0;">&nbsp;</td>
-  </tr>
-  <tr>
-    <td align="center">
-
-      <img class="side-img"
-      src="https://raw.githubusercontent.com/Ux-Oliveira/HenriquesNewsletter/main/promo.png"
-      style="width:200px; transform:rotate(-10deg); display:block;">
-
-    </td>
-  </tr>
-</table>
+<div class="img-wrap">
+<img class="side-img"
+src="https://raw.githubusercontent.com/Ux-Oliveira/HenriquesNewsletter/main/promo.png"
+style="width:200px; transform:rotate(-10deg);">
+</div>
 
 </td>
+</tr>
+
+<!-- WHATSAPP BUTTON (CENTER FIXED) -->
+<tr>
+<td align="center" style="padding:20px;">
 
 <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0">
 <tr>
@@ -181,9 +174,9 @@ style="display:inline-block;padding:12px 45px;border:2px solid #C60572;color:#ff
 </td>
 </tr>
 
-<!--FOOTER-->
+<!-- FOOTER (CENTER FIXED) -->
 <tr>
-<td align="center" style="padding:20px;width:100%;">
+<td align="center" style="padding:20px;">
 
 <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0">
 <tr>
