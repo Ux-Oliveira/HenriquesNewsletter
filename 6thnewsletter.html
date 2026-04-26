@@ -20,10 +20,8 @@ body {
   font-family:"Shrikhand", cursive;
 }
 
-/* colors */
 .highlight { color:#C60572; }
 
-/* text */
 p {
   font-size:15px;
   line-height:22px;
@@ -31,7 +29,6 @@ p {
   text-align:center;
 }
 
-/* container */
 .wrapper {
   max-width:600px;
   margin:auto;
@@ -72,22 +69,21 @@ The most special weekly newsletter awaits you, my angel 💌
 
 <table role="presentation">
 
-<!-- CONTENT BLOCK -->
 <tr>
-<td style="padding:40px 20px;">
+<td style="padding:40px 20px; position:relative;">
 
 <table width="100%">
 <tr>
 
 <!-- LEFT IMAGE -->
-<td class="stack" width="20%" style="text-align:center;">
+<td class="stack" width="20%" style="text-align:center; position:relative; z-index:1;">
 <img class="side-img"
 src="https://raw.githubusercontent.com/Ux-Oliveira/HenriquesNewsletter/main/promo.png"
-style="width:200px; max-width:none;transform:rotate(-10deg);margin-top:20px;">
+style="width:200px; max-width:none; transform:rotate(-10deg); margin-top:20px;">
 </td>
 
 <!-- CENTER CONTENT -->
-<td class="stack" width="60%" style="text-align:center;">
+<td class="stack" width="60%" style="text-align:center; position:relative; z-index:2;">
 
 <h1 style="font-weight:400;margin:0 0 20px 0;color:#ffffff;">
 Hi <span class="highlight">Miss Melis</span>.
@@ -117,11 +113,11 @@ You're the <span class="highlight">love of my life</span> and this love of mine 
 
 </td>
 
-<!-- RIGHT IMAGE -->
-<td class="stack" width="20%" style="text-align:center;">
+<!-- RIGHT IMAGE (BROUGHT FORWARD) -->
+<td class="stack" width="20%" style="text-align:center; position:relative; z-index:3;">
 <img class="side-img"
 src="https://raw.githubusercontent.com/Ux-Oliveira/HenriquesNewsletter/main/smiling.png"
-style="width:120px;transform:rotate(10deg);margin-top:40px;">
+style="width:150px; max-width:none; transform:rotate(10deg); margin-top:40px;">
 </td>
 
 </tr>
@@ -132,7 +128,7 @@ style="width:120px;transform:rotate(10deg);margin-top:40px;">
 
 <!-- WHATSAPP BUTTON -->
 <tr>
-<td style="text-align:center;padding:20px;">
+<td style="text-align:center;padding:20px; position:relative; z-index:2;">
 
 <a href="https://wa.me/5511970161020?text=%2ASpecial%20Visual%20Ticket%2A"
 style="display:inline-block;padding:12px 45px;border:2px solid #C60572;color:#ffffff;border-radius:4px;">
@@ -144,7 +140,7 @@ style="display:inline-block;padding:12px 45px;border:2px solid #C60572;color:#ff
 
 <!-- FOOTER -->
 <tr>
-<td style="text-align:center;padding:20px;color:#ffffff;">
+<td style="text-align:center;padding:20px;color:#ffffff; position:relative; z-index:2;">
 
 <a href="https://raw.githubusercontent.com/Ux-Oliveira/HenriquesNewsletter/main/why.png?raw=true"
 target="_blank"
