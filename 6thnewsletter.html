@@ -7,26 +7,31 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
 
-  
-
 <style>
 table {
   border-spacing:0;
   border-collapse:collapse;
   width:100%;
-  table-layout:fixed;
 }
 
-td {padding:0;vertical-align:top;}
+td {
+  padding:0;
+  vertical-align:top;
+  text-align:center;
+}
 
 img {
   border:0;
   display:block;
   max-width:100%;
   height:auto;
+  margin:0 auto;
 }
 
-a {text-decoration:none;color:#211F1C;}
+a {
+  text-decoration:none;
+  color:#211F1C;
+}
 
 body {
   margin:0;
@@ -49,32 +54,27 @@ p {
   margin:auto;
   background:#ffffff;
   color:#211F1C;
-  font-family:"Shrikhand", cursive;
 }
 
-/*SAFE IMAGE WRAPPER*/
+/* image wrapper */
 .img-wrap {
   width:200px;
   margin:20px auto;
-  position:relative;
 }
 
-/* MOBILE FIX */
+/* MOBILE */
 @media only screen and (max-width:600px) {
+
   .stack {
     display:block !important;
     width:100% !important;
-    text-align:center !important;
   }
 
   .side-img {
-    margin:20px auto !important;
     transform:none !important;
+    margin:20px auto !important;
   }
 
-  h1, p {
-    text-align:center !important;
-  }
 }
 </style>
 
@@ -92,14 +92,13 @@ The most special weekly newsletter awaits you, my angel 💌
 <table role="presentation">
 
 <tr>
-<td style="padding:40px 20px; position:relative;">
+<td style="padding:40px 20px;">
 
-<table width="100%" style="table-layout:fixed;">
+<table width="100%">
 <tr>
-</td>
 
 <!-- CENTER CONTENT -->
-<td class="stack" width="60%" style="text-align:center; position:relative; z-index:2;">
+<td class="stack" width="100%">
 
 <h1 style="font-weight:400;margin:0 0 20px 0;color:#211F1C;">
 Hi <span class="highlight">Miss Melis</span>.
@@ -117,7 +116,6 @@ Such a <span class="highlight">special woman</span>, such an amazing person, suc
 Just press the <span class="highlight">poetry button</span> and enjoy!
 </p>
 
-<!-- CLICKABLE IMAGE -->
 <a href="https://urpoetry.vercel.app/" target="_blank">
 <img src="https://raw.githubusercontent.com/Ux-Oliveira/HenriquesNewsletter/main/header.png"
 style="width:100%;max-width:500px;margin:20px auto;">
@@ -129,48 +127,43 @@ You're the <span class="highlight">love of my life</span> and this love of mine 
 
 </td>
 
-<!-- RIGHT IMAGE -->
-<td class="stack" width="20%" style="text-align:center;">
+</tr>
+
+<!-- RIGHT IMAGE (STACKED + CENTERED) -->
+<tr>
+<td class="stack">
 <div class="img-wrap">
 <img class="side-img"
 src="https://raw.githubusercontent.com/Ux-Oliveira/HenriquesNewsletter/main/smiling.png"
 style="width:150px; transform:rotate(10deg);">
 </div>
 </td>
-
 </tr>
+
 </table>
 
 </td>
 </tr>
-<!--WHATSAPP BUTTON-->
-<tr>
-<td align="center" style="padding:20px;width:100%;">
 
-<table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0">
-<!--WHATSAPP BUTTON-->
+<!-- WHATSAPP BUTTON -->
 <tr>
-<td align="center" style="padding:20px;width:100%;text-align:center;">
+<td style="padding:20px;">
 
 <a href="https://wa.me/5511970161020?text=%2ASpecial%20Visual%20Ticket%2A"
-style="display:inline-block;padding:12px 45px;border:2px solid #C60572;color:#ffffff;border-radius:4px;">
+style="display:inline-block;padding:12px 45px;border:2px solid #C60572;color:#ffffff;border-radius:4px;margin:0 auto;">
 ❤️
 </a>
 
 </td>
 </tr>
-</table>
 
-</td>
-</tr>
-
-<!--FOOTER-->
+<!-- FOOTER -->
 <tr>
-<td align="center" style="padding:20px;width:100%;text-align:center;">
+<td style="padding:20px;">
 
 <a href="https://raw.githubusercontent.com/Ux-Oliveira/HenriquesNewsletter/main/why.png?raw=true"
 target="_blank"
-style="font-size:12px;color:#C60572;display:inline-block;text-align:center;">
+style="font-size:12px;color:#C60572;display:inline-block;margin:0 auto;">
 Want to unsubscribe from the Newsletter?
 </a>
 
