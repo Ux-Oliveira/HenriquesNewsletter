@@ -8,15 +8,28 @@
 <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
 
 <style>
-table {border-spacing:0;border-collapse:collapse;width:100%;}
+table {
+  border-spacing:0;
+  border-collapse:collapse;
+  width:100%;
+  table-layout:fixed;
+}
+
 td {padding:0;vertical-align:top;}
-img {border:0;display:block;max-width:100%;height:auto;}
-a {text-decoration:none;color:#ffffff;}
+
+img {
+  border:0;
+  display:block;
+  max-width:100%;
+  height:auto;
+}
+
+a {text-decoration:none;color:#0D1117;}
 
 body {
   margin:0;
   padding:0;
-  background:#000000;
+  background:#ffffff;
   font-family:"Shrikhand", cursive;
 }
 
@@ -35,6 +48,13 @@ p {
   background:#000000;
   color:#ffffff;
   font-family:"Shrikhand", cursive;
+}
+
+/*SAFE IMAGE WRAPPER*/
+.img-wrap {
+  width:200px;
+  margin:20px auto;
+  position:relative;
 }
 
 /* MOBILE FIX */
@@ -72,14 +92,16 @@ The most special weekly newsletter awaits you, my angel 💌
 <tr>
 <td style="padding:40px 20px; position:relative;">
 
-<table width="100%">
+<table width="100%" style="table-layout:fixed;">
 <tr>
 
 <!-- LEFT IMAGE -->
-<td class="stack" width="20%" style="text-align:center; position:relative; z-index:1;">
+<td class="stack" width="20%" style="text-align:center;">
+<div class="img-wrap">
 <img class="side-img"
 src="https://raw.githubusercontent.com/Ux-Oliveira/HenriquesNewsletter/main/promo.png"
-style="width:200px; max-width:none; transform:rotate(-10deg); margin-top:20px;">
+style="width:200px; transform:rotate(-10deg);">
+</div>
 </td>
 
 <!-- CENTER CONTENT -->
@@ -114,10 +136,12 @@ You're the <span class="highlight">love of my life</span> and this love of mine 
 </td>
 
 <!-- RIGHT IMAGE -->
-<td class="stack" width="20%" style="text-align:center; position:relative; z-index:3;">
+<td class="stack" width="20%" style="text-align:center;">
+<div class="img-wrap">
 <img class="side-img"
 src="https://raw.githubusercontent.com/Ux-Oliveira/HenriquesNewsletter/main/smiling.png"
-style="width:150px; max-width:none; transform:rotate(10deg); margin-top:40px;">
+style="width:150px; transform:rotate(10deg);">
+</div>
 </td>
 
 </tr>
@@ -126,7 +150,7 @@ style="width:150px; max-width:none; transform:rotate(10deg); margin-top:40px;">
 </td>
 </tr>
 
-<!-- WHATSAPP BUTTON (FIXED CENTERING) -->
+<!--WHATSAPP BUTTON-->
 <tr>
 <td align="center" style="padding:20px;width:100%;">
 
@@ -146,7 +170,7 @@ style="display:inline-block;padding:12px 45px;border:2px solid #C60572;color:#ff
 </td>
 </tr>
 
-<!-- FOOTER (FIXED CENTERING) -->
+<!--FOOTER-->
 <tr>
 <td align="center" style="padding:20px;width:100%;">
 
