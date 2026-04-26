@@ -8,9 +8,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
 
 <style>
-table {border-spacing:0;border-collapse:collapse;}
+table {border-spacing:0;border-collapse:collapse;width:100%;}
 td {padding:0;vertical-align:top;}
-img {border:0;display:block;}
+img {border:0;display:block;max-width:100%;height:auto;}
 a {text-decoration:none;color:#ffffff;}
 
 body {
@@ -20,35 +20,57 @@ body {
   font-family:"Shrikhand", cursive;
 }
 
-.highlight {
-  color:#C60572;
-}
+/* colors */
+.highlight { color:#C60572; }
 
-.subtle {
-  color:#26180E;
-}
-
+/* text */
 p {
   font-size:15px;
   line-height:22px;
   margin:0 0 18px 0;
+  text-align:center;
+}
+
+/* container */
+.wrapper {
+  max-width:600px;
+  margin:auto;
+  background:#000000;
+  color:#ffffff;
+  font-family:"Shrikhand", cursive;
+}
+
+/* MOBILE FIX */
+@media only screen and (max-width:600px) {
+  .stack {
+    display:block !important;
+    width:100% !important;
+    text-align:center !important;
+  }
+
+  .side-img {
+    margin:20px auto !important;
+    transform:none !important;
+  }
+
+  h1, p {
+    text-align:center !important;
+  }
 }
 </style>
 
 </head>
 
-  
-
 <body>
 
-  <div style="display:none;max-height:0;overflow:hidden;opacity:0;color:transparent;">
-The most special of the weekly newsletters awaits for you, my angel 💌
+<!-- PREHEADER -->
+<div style="display:none;max-height:0;overflow:hidden;opacity:0;color:transparent;">
+The most special weekly newsletter awaits you, my angel 💌
 </div>
 
-  
-<div style="max-width:600px;margin:auto;background:#000000;color:#ffffff;font-family:'Shrikhand', cursive;">
+<div class="wrapper">
 
-<table width="100%" role="presentation">
+<table role="presentation">
 
 <!-- CONTENT BLOCK -->
 <tr>
@@ -58,13 +80,14 @@ The most special of the weekly newsletters awaits for you, my angel 💌
 <tr>
 
 <!-- LEFT IMAGE -->
-<td width="20%" style="vertical-align:top;">
-<img src="https://raw.githubusercontent.com/Ux-Oliveira/HenriquesNewsletter/main/promo.png"
-style="width:180px;margin-top:20px;transform:rotate(-10deg);">
+<td class="stack" width="20%" style="text-align:center;">
+<img class="side-img"
+src="https://raw.githubusercontent.com/Ux-Oliveira/HenriquesNewsletter/main/promo.png"
+style="width:160px;transform:rotate(-10deg);margin-top:20px;">
 </td>
 
 <!-- CENTER CONTENT -->
-<td width="60%" style="text-align:center;">
+<td class="stack" width="60%" style="text-align:center;">
 
 <h1 style="font-weight:400;margin:0 0 20px 0;color:#ffffff;">
 Hi <span class="highlight">Miss Melis</span>.
@@ -95,9 +118,10 @@ You're the <span class="highlight">love of my life</span> and this love of mine 
 </td>
 
 <!-- RIGHT IMAGE -->
-<td width="20%" style="vertical-align:top;text-align:right;">
-<img src="https://raw.githubusercontent.com/Ux-Oliveira/HenriquesNewsletter/main/smilling.png"
-style="width:120px;margin-top:40px;transform:rotate(10deg);">
+<td class="stack" width="20%" style="text-align:center;">
+<img class="side-img"
+src="https://raw.githubusercontent.com/Ux-Oliveira/HenriquesNewsletter/main/smiling.png"
+style="width:120px;transform:rotate(10deg);margin-top:40px;">
 </td>
 
 </tr>
