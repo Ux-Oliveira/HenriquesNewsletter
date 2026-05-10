@@ -57,44 +57,39 @@ p {
 }
 
 .img-wrap {
-  width:200px;
-  margin:20px auto;
-}
-
-.photo-stack {
-  position:relative;
   width:100%;
-  max-width:500px;
+  max-width:420px;
+  margin:40px auto;
+  position:relative;
   height:320px;
-  margin:20px auto;
 }
 
-.photo-stack img {
+.stack-photo {
   position:absolute;
-  border-radius:12px;
-  box-shadow:0 10px 25px rgba(0,0,0,0.2);
+  border-radius:14px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.2);
 }
 
-.left-photo {
-  width:180px;
-  left:20px;
-  top:40px;
+.left-stack {
+  width:170px;
+  left:0;
+  top:50px;
   z-index:1;
   transform:rotate(-8deg);
 }
 
-.center-photo {
-  width:240px;
+.center-stack {
+  width:230px;
   left:50%;
   top:0;
   transform:translateX(-50%);
   z-index:3;
 }
 
-.right-photo {
-  width:180px;
-  right:20px;
-  top:40px;
+.right-stack {
+  width:170px;
+  right:0;
+  top:50px;
   z-index:1;
   transform:rotate(8deg);
 }
@@ -111,18 +106,19 @@ p {
     margin:20px auto !important;
   }
 
-  .photo-stack {
+  .img-wrap {
     height:260px;
+    max-width:320px;
   }
 
-  .left-photo,
-  .right-photo {
+  .left-stack,
+  .right-stack {
     width:120px;
     top:50px;
   }
 
-  .center-photo {
-    width:180px;
+  .center-stack {
+    width:170px;
   }
 
 }
@@ -165,20 +161,8 @@ So I wanted to add something special to the website for,<span class="highlight">
 </p>
 
 <a href="https://urpoetry.vercel.app/" target="_blank">
-
-<div class="photo-stack">
-
-<img class="left-photo"
-src="https://raw.githubusercontent.com/Ux-Oliveira/HenriquesNewsletter/main/flower.png">
-
-<img class="center-photo"
-src="https://raw.githubusercontent.com/Ux-Oliveira/HenriquesNewsletter/main/header.png">
-
-<img class="right-photo"
-src="https://raw.githubusercontent.com/Ux-Oliveira/HenriquesNewsletter/main/danke.png">
-
-</div>
-
+<img src="https://raw.githubusercontent.com/Ux-Oliveira/HenriquesNewsletter/main/header.png"
+style="width:100%;max-width:500px;margin:20px auto;">
 </a>
 
 <p>
@@ -191,11 +175,26 @@ I am yours! <span class="highlight">And always will be!</span> My beautiful, bea
 
 <tr>
 <td class="stack">
+
 <div class="img-wrap">
-<img class="side-img"
-src="https://raw.githubusercontent.com/Ux-Oliveira/HenriquesNewsletter/main/smiling.png"
-style="width:150px; transform:rotate(10deg);">
+
+<a href="https://youtube.com" target="_blank">
+<img class="stack-photo left-stack"
+src="https://raw.githubusercontent.com/Ux-Oliveira/HenriquesNewsletter/main/smiling.png">
+</a>
+
+<a href="https://youtube.com" target="_blank">
+<img class="stack-photo center-stack"
+src="https://raw.githubusercontent.com/Ux-Oliveira/HenriquesNewsletter/main/smiling.png">
+</a>
+
+<a href="https://youtube.com" target="_blank">
+<img class="stack-photo right-stack"
+src="https://raw.githubusercontent.com/Ux-Oliveira/HenriquesNewsletter/main/smiling.png">
+</a>
+
 </div>
+
 </td>
 </tr>
 
