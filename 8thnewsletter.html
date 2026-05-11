@@ -109,36 +109,33 @@ p {
   }
 
   .img-wrap {
+    width:260px;
+    height:220px;
+    margin:30px auto;
     position:relative;
-    width:100%;
-    max-width:280px;
-    height:240px;
-    margin:30px auto 10px auto;
-  }
-
-  .stack-photo {
-    position:absolute;
-    margin:auto !important;
   }
 
   .left-stack {
-    width:110px;
-    left:0;
+    width:100px;
+    left:10px;
     top:55px;
+    z-index:1;
     transform:rotate(-8deg);
   }
 
   .center-stack {
-    width:160px;
+    width:150px;
     left:50%;
     top:0;
+    z-index:3;
     transform:translateX(-50%);
   }
 
   .right-stack {
-    width:110px;
-    right:0;
+    width:100px;
+    right:10px;
     top:55px;
+    z-index:1;
     transform:rotate(8deg);
   }
 
