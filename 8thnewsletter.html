@@ -94,6 +94,10 @@ p {
   transform:rotate(8deg);
 }
 
+.mobile-gallery {
+  display:none;
+}
+
 @media only screen and (max-width:600px) {
 
   .stack {
@@ -109,34 +113,31 @@ p {
   }
 
   .img-wrap {
-    width:260px;
-    height:220px;
-    margin:30px auto;
-    position:relative;
+    display:none !important;
   }
 
-  .left-stack {
-    width:100px;
-    left:10px;
-    top:55px;
-    z-index:1;
-    transform:rotate(-8deg);
+  .mobile-gallery {
+    display:table !important;
+    width:100% !important;
+    margin:30px auto !important;
+    table-layout:fixed;
   }
 
-  .center-stack {
-    width:150px;
-    left:50%;
-    top:0;
-    z-index:3;
-    transform:translateX(-50%);
+  .mobile-gallery td {
+    vertical-align:middle !important;
+    padding:4px !important;
   }
 
-  .right-stack {
-    width:100px;
-    right:10px;
-    top:55px;
-    z-index:1;
-    transform:rotate(8deg);
+  .mobile-side {
+    width:95px !important;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+  }
+
+  .mobile-center {
+    width:120px !important;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
   }
 
 }
@@ -212,6 +213,33 @@ src="https://raw.githubusercontent.com/Ux-Oliveira/HenriquesNewsletter/main/righ
 </a>
 
 </div>
+
+<table class="mobile-gallery" role="presentation">
+<tr>
+
+<td>
+<a href="https://www.youtube.com/watch?v=dt9gn7R683k" target="_blank">
+<img class="mobile-side"
+src="https://raw.githubusercontent.com/Ux-Oliveira/HenriquesNewsletter/main/left.png">
+</a>
+</td>
+
+<td>
+<a href="https://www.youtube.com/watch?v=lfBdGT4dn4E&pp=ygUNdHdvIG9mIGhlYXJ0cw%3D%3D" target="_blank">
+<img class="mobile-center"
+src="https://raw.githubusercontent.com/Ux-Oliveira/HenriquesNewsletter/main/lovers.png">
+</a>
+</td>
+
+<td>
+<a href="https://www.youtube.com/watch?v=pQflBV1UgVY" target="_blank">
+<img class="mobile-side"
+src="https://raw.githubusercontent.com/Ux-Oliveira/HenriquesNewsletter/main/right.png">
+</a>
+</td>
+
+</tr>
+</table>
 
 </td>
 </tr>
