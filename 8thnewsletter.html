@@ -99,26 +99,47 @@ p {
   .stack {
     display:block !important;
     width:100% !important;
+    text-align:center !important;
   }
 
-  .side-img {
-    transform:none !important;
-    margin:20px auto !important;
+  h1,
+  p,
+  td {
+    text-align:center !important;
   }
 
   .img-wrap {
-    height:260px;
-    max-width:320px;
+    position:relative;
+    width:100%;
+    max-width:280px;
+    height:240px;
+    margin:30px auto 10px auto;
   }
 
-  .left-stack,
-  .right-stack {
-    width:120px;
-    top:50px;
+  .stack-photo {
+    position:absolute;
+    margin:auto !important;
+  }
+
+  .left-stack {
+    width:110px;
+    left:0;
+    top:55px;
+    transform:rotate(-8deg);
   }
 
   .center-stack {
-    width:170px;
+    width:160px;
+    left:50%;
+    top:0;
+    transform:translateX(-50%);
+  }
+
+  .right-stack {
+    width:110px;
+    right:0;
+    top:55px;
+    transform:rotate(8deg);
   }
 
 }
@@ -204,7 +225,7 @@ src="https://raw.githubusercontent.com/Ux-Oliveira/HenriquesNewsletter/main/righ
 </tr>
 
 <tr>
-<td style="padding:20px; margin-left:-20px;">
+<td style="padding:20px; text-align:center;">
 
 <a href="https://wa.me/5511970161020?text=%2ASpecial%20Visual%20Ticket%2A"
 style="display:inline-block;padding:12px 45px;border:2px solid #C60572;color:#ffffff;border-radius:4px;margin:0 auto;">
@@ -215,7 +236,7 @@ style="display:inline-block;padding:12px 45px;border:2px solid #C60572;color:#ff
 </tr>
 
 <tr>
-<td style="padding:20px;">
+<td style="padding:20px; text-align:center;">
 
 <a href="https://raw.githubusercontent.com/Ux-Oliveira/HenriquesNewsletter/main/why.png?raw=true"
 target="_blank"
